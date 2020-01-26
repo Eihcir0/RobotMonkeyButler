@@ -55,6 +55,10 @@ class Main extends Component {
         })
     }
 
+    handleNameChange = (e) => {
+        this.setState({'feature': e.target.value})
+    }
+
     render() {
         const {
             processes,
@@ -62,11 +66,11 @@ class Main extends Component {
             env,
             go_list,
         } = this.state
-        console.log(Project)
+        console.log(this.state)
         return (
             <div className="main">
                 <div className="center-container" style={{marginTop: '1rem', marginBottom: '1rem'}}>
-                    Project Name: <input className="textbox" type='text' name='projectName' label='Project Name'/>
+                    Project Name: <input onChange={this.handleNameChange} className="textbox" type='text' name='feature' label='Project Name'/>
                 </div>
 
                 <TodoList

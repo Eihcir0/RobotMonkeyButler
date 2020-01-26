@@ -6,11 +6,9 @@ function App() {
   return (
     <div className="app">
       <header>
-        <p>
-          <code style={{ fontSize: 'xx-large'}}>
-            Robot Monkey Butler
-          </code>
-        </p>
+        <code style={{ fontSize: 'x-large'}}>
+          robot.monkey.butler
+        </code>
       </header>
       <Main/>
 

@@ -21,8 +21,9 @@ span {
   background: #fd0;
 }
  header {
-  background-color: #5e6472;
-  padding: 1rem;
+  background-color: #818897;
+  padding-top: 2.5rem;
+  padding-bottom: 0.25rem;
   width: 100%;
   position: fixed;
   top: 0;
@@ -54,7 +55,7 @@ input {
 
 }
 .dim {
-  background-color: #5e6472!important;
+  background-color: #818897!important;
 }
 .app {
   background-color: #b8f2e6;
@@ -68,10 +69,10 @@ input {
   padding: 0.25rem;
 }
 .todo-list.dim {
-  background-color: #5e6472!important;
+  background-color: #818897!important;
 }
 .task.dim {
-  background-color: #5e6472!important;
+  background-color: #818897!important;
 }
 .save-button {
   border: 1px solid silver;
