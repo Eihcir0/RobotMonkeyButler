@@ -479,7 +479,7 @@
 		"sections": {},
 		"replaces": {},
 		"paths": {
-			"source_base_path": "/Users/lcvista/dev/lcv/rmb/source_files/",
+			"source_base_path": "/Users/lcvista/dev/rmb/source_files/",
 			"target_base_path": "/Users/lcvista/dev/lcv/"
 		},
 		"inserts": {}
