@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Eihcir0/RobotMonkeyButler/static/css/main.9a563cf7.chunk.css",
+    "main.js": "/Eihcir0/RobotMonkeyButler/static/js/main.91142bbb.chunk.js",
+    "main.js.map": "/Eihcir0/RobotMonkeyButler/static/js/main.91142bbb.chunk.js.map",
+    "runtime-main.js": "/Eihcir0/RobotMonkeyButler/static/js/runtime-main.8c518896.js",
+    "runtime-main.js.map": "/Eihcir0/RobotMonkeyButler/static/js/runtime-main.8c518896.js.map",
+    "static/js/2.3e999efa.chunk.js": "/Eihcir0/RobotMonkeyButler/static/js/2.3e999efa.chunk.js",
+    "static/js/2.3e999efa.chunk.js.map": "/Eihcir0/RobotMonkeyButler/static/js/2.3e999efa.chunk.js.map",
+    "index.html": "/Eihcir0/RobotMonkeyButler/index.html",
+    "precache-manifest.0c363034ca0853b5b035eb53c67c746f.js": "/Eihcir0/RobotMonkeyButler/precache-manifest.0c363034ca0853b5b035eb53c67c746f.js",
+    "service-worker.js": "/Eihcir0/RobotMonkeyButler/service-worker.js",
+    "static/css/main.9a563cf7.chunk.css.map": "/Eihcir0/RobotMonkeyButler/static/css/main.9a563cf7.chunk.css.map",
+    "static/js/2.3e999efa.chunk.js.LICENSE": "/Eihcir0/RobotMonkeyButler/static/js/2.3e999efa.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c518896.js",
+    "static/js/2.3e999efa.chunk.js",
+    "static/css/main.9a563cf7.chunk.css",
+    "static/js/main.91142bbb.chunk.js"
+  ]
+}
