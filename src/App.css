@@ -22,8 +22,8 @@ span {
 }
  header {
   background-color: #818897;
-  padding-top: 2.5rem;
-  padding-bottom: 0.25rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.1rem;
   width: 100%;
   position: fixed;
   top: 0;
@@ -35,7 +35,7 @@ input {
 .main {
   margin-right: 1rem;
   margin-left: 1rem;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 .process {
   display: flex;
@@ -62,7 +62,7 @@ input {
 }
 .main {
   background-color: #b8f2e6;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 .todo-list {
   background-color: #b8f2e6;
@@ -83,6 +83,7 @@ input {
   font-size: large;
   font-family: monospace;
   margin-left: 1rem;
+  cursor: pointer;
 }
 .center-container {
   text-align: center;

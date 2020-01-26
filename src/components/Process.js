@@ -24,7 +24,7 @@ class Process extends Component {
 
     render() {
         const { expanded } = this.state
-        const caret = expanded ? <AiOutlineCaretLeft/> : <AiOutlineCaretRight/>
+        const caret = expanded ?  <AiOutlineCaretRight/> : <AiOutlineCaretLeft/>
         let className = !expanded ? 'process-expanded' : 'process'
         const disabled = (!this.props.parentEnabled || !this.props.enabled)
         if  (disabled) className += ' dim'

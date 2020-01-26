@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="app">
       <header>
-        <code style={{ fontSize: 'x-large'}}>
+        <code style={{ fontSize: 'small'}}>
           robot.monkey.butler
         </code>
       </header>

@@ -8,7 +8,7 @@
 				"sidebaritem": [
 					"\t\t\t\t{\n",
 					"\t\t\t\t\tlabel: 'Robot Monkey Butlers',\n",
-					"\t\t\t\t\tpermission: 'react.bulk_uploads',\n",
+					"\t\t\t\t\tpermission: 'react.robot_monkey_butlers',\n",
 					"\t\t\t\t\turl: joinUrl(\n",
 					"\t\t\t\t\t\torganization.slug,\n",
 					"\t\t\t\t\t\t'robotmonkeybutlers',\n",
@@ -183,17 +183,25 @@
 			"id": "Edit Scene",
 			"name": "Edit Scene"
 		},
-		"migrate": {
+		"run migrations -- new table": {
 			"command": "python manage.py migrate",
 			"type": "shell_command",
 			"success_message": "Database migration successful",
 			"enabled": true,
-			"id": "migrate",
-			"name": "migrate"
+			"id": "run migrations -- new table",
+			"name": "run migrations -- new table"
+		},
+		"run migrations -- permissions": {
+			"command": "python manage.py migrate",
+			"type": "shell_command",
+			"success_message": "Permissions migration successful",
+			"enabled": true,
+			"id": "run migrations -- permissions",
+			"name": "run migrations -- permissions"
 		},
 		"update permission migration": {
 			"file_type": "py",
-			"target_file_name": "0046_auto_20200124_0518",
+			"target_file_name": "(^_^)latestmigration",
 			"type": "file",
 			"replaces": {
 				"class Migration(migrations.Migration):\n": [
@@ -285,7 +293,7 @@
 					"    #  create a PermissionGroup which is basically just a wrapper around the AuthGroup which\n",
 					"    #  contains a description\n",
 					"    PermissionGroup.objects.get_or_create(\n",
-					"        description='Robot Monkey Butlers',\n",
+					"        description='Manage Robot Monkey Butlers',\n",
 					"        group=robotmonkeybutler_manage,\n",
 					"    )\n",
 					"\n",
@@ -321,7 +329,7 @@
 					"    PermissionGroup = apps.get_model('permissions', 'PermissionGroup')\n",
 					"    AuthGroup = apps.get_model('auth', 'Group')\n",
 					"    Permission = apps.get_model('auth', 'Permission')\n",
-					"    RobotMonkeyButler = apps.get_model('robotmonkeybutlerss', 'RobotMonkeyButler')\n",
+					"    RobotMonkeyButler = apps.get_model('robotmonkeybutlers', 'RobotMonkeyButler')\n",
 					"    ContentType = apps.get_model('contenttypes', 'ContentType')\n",
 					"\n",
 					"    ct, created = ContentType.objects.get_or_create(model='', app_label='react')\n",
@@ -410,6 +418,17 @@
 			"id": "register app in base.py",
 			"name": "register app in base.py"
 		},
+		"add reactpermission type": {
+			"file_type": "py",
+			"target_file_name": "models",
+			"type": "file",
+			"inserts": { "reactpermission": ["    'robot_monkey_butlers': 'Manage Robot Monkey Butlers',\n"] },
+			"source_file_path": "(^_^)update",
+			"target_file_path": "lcvista/permissions/",
+			"enabled": true,
+			"id": "add reactpermission type",
+			"name": "add reactpermission type"
+		},
 		"Build ListFilters": {
 			"file_type": "jsx",
 			"target_file_name": "RobotMonkeyButlersListFilters",
@@ -477,7 +496,7 @@
 				"Manage startapp",
 				"Create Model",
 				"makemigrations",
-				"migrate",
+				"run migrations -- new table",
 				"Create API endpoint"
 			],
 			"enabled": true,
@@ -541,7 +560,7 @@
 			"name": "List Page"
 		},
 		"Permissions": {
-			"todo_list": ["makemigrations permissions --empty", "update permission migration"],
+			"todo_list": ["add reactpermission type", "makemigrations permissions --empty", "update permission migration", "run migrations -- permissions"],
 			"enabled": true,
 			"id": "Permissions",
 			"name": "Permissions"
