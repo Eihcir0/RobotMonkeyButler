@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+body {
+  font-family: monaco, monospace;
+  background-size: cover;
+  background-color: #b8f2e6;
+  overscroll-behavior: none;
+  /* text-align: center; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2 {
+  display: inline-block;
+  background: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 30px
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-size: 20px;
+}
+span {
+  background: #fd0;
+}
+ header {
+  background-color: #5e6472;
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+input {
+  cursor: pointer;
+}
+.main {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+.process {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0.25rem;
+  background: #aed9e0;
+  padding: 0.25rem;
+  border: 1px solid silver;
+  border-radius: 6px
+
+}
+.process-expanded {
+  margin: 0.25rem;
+  background: #aed9e0;
+  padding: 0.25rem;
+  border: 1px solid silver;
+  border-radius: 6px;
+
+}
+.dim {
+  background-color: #5e6472!important;
+}
+.app {
+  background-color: #b8f2e6;
+}
+.main {
+  background-color: #b8f2e6;
+  padding-top: 5rem;
+}
+.todo-list {
+  background-color: #b8f2e6;
+  padding: 0.25rem;
+}
+.todo-list.dim {
+  background-color: #5e6472!important;
 }
 
-.App-link {
-  color: #61dafb;
+.caret {
+  border: none;
+  padding: 0;
+  background: inherit;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+  cursor: pointer;
+}
+.process-label {
+}
+.task {
+  background: #faf3dd;
+  padding: 0.25rem;
+  border: 1px solid white;
+  margin: 0.25rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.command {
+  background: #b8f2e6;
+  padding: 0.5rem;
+  border: 1px solid black;
 }
