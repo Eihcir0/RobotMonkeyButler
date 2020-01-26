@@ -3,6 +3,8 @@ body {
   background-size: cover;
   background-color: #b8f2e6;
   overscroll-behavior: none;
+  border-radius: 6px
+
   /* text-align: center; */
 }
 h1, h2 {
@@ -68,7 +70,30 @@ input {
 .todo-list.dim {
   background-color: #5e6472!important;
 }
-
+.task.dim {
+  background-color: #5e6472!important;
+}
+.save-button {
+  border: 1px solid silver;
+  border-radius: 6px;
+  width: 5rem;
+  height: 2rem;
+  background: none;
+  font-size: large;
+  font-family: monospace;
+  margin-left: 1rem;
+}
+.center-container {
+  text-align: center;
+}
+input.textbox {
+  width: 6rem;
+  height: 2rem;
+  font-size: large;
+  padding-left: 0.5rem;
+  border-radius: 6px;
+  border: 0;
+}
 .caret {
   border: none;
   padding: 0;

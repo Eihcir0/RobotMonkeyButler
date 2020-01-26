@@ -34,7 +34,7 @@ class Process extends Component {
                 <Fragment>
                     <div className="left-side-process">
                         <div className="process-label">
-                            <input type="checkbox" name={`${this.props.name}.${fieldName}`} onClick={this.props.handleChange} checked={this.props[fieldName]} value={this.props[fieldName]}></input>
+                            <input type="checkbox" name={`${this.props.name}::${fieldName}`} onClick={this.props.handleChange} checked={this.props[fieldName]} value={this.props[fieldName]}></input>
                             <code>{this.props.id}</code>
                             <button className="caret" onClick={this.handleExpand}>{caret}</button>
                         </div>

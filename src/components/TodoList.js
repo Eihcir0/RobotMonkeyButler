@@ -15,7 +15,7 @@ class TodoList extends Component {
 
         if (itemId in this.props.tasks) {
             const task = this.props.tasks[itemId]
-            return <Task {...task}/>
+            return <Task {...this.props} {...task}/>
         } else if (itemId in this.props.processes) {
             const process = this.props.processes[itemId]
             return <Process {...this.props} {...process}/>
