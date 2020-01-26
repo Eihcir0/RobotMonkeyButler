@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/RobotMonkeyButler/precache-manifest.564f1ad25d71a1c1c74092927d74e613.js"
+  "/RobotMonkeyButler/precache-manifest.f92b05ee6b31cc06b9bb3975a1795908.js"
 );
 
 self.addEventListener('message', (event) => {
