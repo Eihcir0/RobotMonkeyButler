@@ -153,6 +153,39 @@
 			"id": "Build ListFiltersContainer",
 			"name": "Build ListFiltersContainer"
 		},
+		"add report file": {
+			"file_type": "py",
+			"target_file_name": "robot_monkey_butler",
+			"type": "file",
+			"source_file_path": "lcvista/reports/reports/",
+			"target_file_path": "lcvista/reports/reports/",
+			"name": "add report file",
+			"enabled": true,
+			"id": "add report file",
+			"source_file_full_name_with_extension": "robot_monkey_butler.py"
+		},
+		"add columns": {
+			"file_type": "py",
+			"target_file_name": "robot_monkey_butler",
+			"type": "file",
+			"source_file_path": "lcvista/reports/columns/",
+			"target_file_path": "lcvista/reports/columns/",
+			"name": "add columns",
+			"enabled": true,
+			"id": "add columns",
+			"source_file_full_name_with_extension": "robot_monkey_butler.py"
+		},
+		"add filters": {
+			"file_type": "py",
+			"target_file_name": "robot_monkey_butler",
+			"type": "file",
+			"source_file_path": "lcvista/reports/filters/",
+			"target_file_path": "lcvista/reports/filters/",
+			"name": "add filters",
+			"enabled": true,
+			"id": "add filters",
+			"source_file_full_name_with_extension": "robot_monkey_butler.py"
+		},
 		"add endpoint tests": {
 			"file_type": "py",
 			"target_file_name": "test_robotmonkeybutlers",
@@ -190,6 +223,14 @@
 			"enabled": true,
 			"id": "run migrations -- new table",
 			"name": "run migrations -- new table"
+		},
+		"run migrations reports": {
+			"command": "python manage.py migrate",
+			"type": "shell_command",
+			"success_message": "Reportconfig migration successful",
+			"enabled": true,
+			"id": "run migrations reports",
+			"name": "run migrations reports"
 		},
 		"run migrations -- permissions": {
 			"command": "python manage.py migrate",
@@ -429,6 +470,20 @@
 			"id": "add reactpermission type",
 			"name": "add reactpermission type"
 		},
+		"add new report type to reportconfig": {
+			"file_type": "py",
+			"target_file_name": "models",
+			"type": "file",
+			"inserts": {
+				"reportimport": ["from lcvista.reports.reports.robot_monkey_butler import RobotMonkeyButlerReport\n"],
+				"reporttype": ["        RobotMonkeyButlerReport,\n"]
+			},
+			"source_file_path": "(^_^)update",
+			"target_file_path": "lcvista/reports/",
+			"enabled": true,
+			"id": "add new report type to reportconfig",
+			"name": "add new report type to reportconfig"
+		},
 		"Build ListFilters": {
 			"file_type": "jsx",
 			"target_file_name": "RobotMonkeyButlersListFilters",
@@ -474,7 +529,7 @@
 			"name": "Build ListContainer"
 		}
 	},
-	"go_list": ["Front End", "Back End", "Permissions"],
+	"go_list": ["Front End", "Back End", "Permissions", "Reporting"],
 	"env": {
 		"sections": {},
 		"replaces": {},
@@ -485,6 +540,12 @@
 		"inserts": {}
 	},
 	"processes": {
+		"Reporting": {
+			"todo_list": ["add new report type to reportconfig", "add report file", "add columns", "add filters", "run migrations reports"],
+			"enabled": true,
+			"id": "Reporting",
+			"name": "Reporting"
+		},
 		"List Headers": {
 			"todo_list": ["Build ListHeader"],
 			"enabled": true,
