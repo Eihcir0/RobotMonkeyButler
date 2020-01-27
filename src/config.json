@@ -122,6 +122,14 @@
 			"id": "mkdir reactapp containers",
 			"name": "mkdir reactapp containers"
 		},
+		"mkdir integration tests": {
+			"command": "mkdir lcvista/tests/integration/robotmonkeybutlers/",
+			"type": "shell_command",
+			"success_message": "DIR CREATED  : lcvista/tests/integration/robotmonkeybutlers/",
+			"enabled": true,
+			"id": "mkdir integration tests",
+			"name": "mkdir integration tests"
+		},
 		"Add React routes": {
 			"file_type": "jsx",
 			"target_file_name": "index",
@@ -370,7 +378,7 @@
 					"    PermissionGroup = apps.get_model('permissions', 'PermissionGroup')\n",
 					"    AuthGroup = apps.get_model('auth', 'Group')\n",
 					"    Permission = apps.get_model('auth', 'Permission')\n",
-					"    RobotMonkeyButler = apps.get_model('robotmonkeybutlers', 'RobotMonkeyButler')\n",
+					"    RobotMonkeyButler = apps.get_model('robotmonkeybutler', 'RobotMonkeyButler')\n",
 					"    ContentType = apps.get_model('contenttypes', 'ContentType')\n",
 					"\n",
 					"    ct, created = ContentType.objects.get_or_create(model='', app_label='react')\n",
@@ -506,6 +514,17 @@
 			"id": "Create Model",
 			"name": "Create Model"
 		},
+		"create pages.py": {
+			"file_type": "py",
+			"target_file_name": "pages",
+			"source_file_full_name_with_extension": "pages.py",
+			"type": "file",
+			"source_file_path": "lcvista/tests/integration/robotmonkeybutlers/",
+			"target_file_path": "lcvista/tests/integration/robotmonkeybutlers/",
+			"enabled": true,
+			"id": "create pages.py",
+			"name": "create pages.py"
+		},
 		"Build List Scene": {
 			"file_type": "jsx",
 			"target_file_name": "RobotMonkeyButlersListScene",
@@ -529,7 +548,7 @@
 			"name": "Build ListContainer"
 		}
 	},
-	"go_list": ["Front End", "Back End", "Permissions", "Reporting"],
+	"go_list": ["Front End", "Back End", "Permissions", "Reporting", "Testing"],
 	"env": {
 		"sections": {},
 		"replaces": {},
@@ -540,11 +559,24 @@
 		"inserts": {}
 	},
 	"processes": {
+		"Testing": {
+			"todo_list": ["Selenium Testing", "add endpoint tests"
+			],
+			"enabled": true,
+			"id": "Testing",
+			"name": "Testing"
+		},
 		"Reporting": {
-			"todo_list": ["add new report type to reportconfig", "add report file", "add columns", "add filters", "run migrations reports"],
+			"todo_list": ["add columns", "add filters", "add report file", "add new report type to reportconfig", "makemigrations", "run migrations reports"],
 			"enabled": true,
 			"id": "Reporting",
 			"name": "Reporting"
+		},
+		"Selenium Testing": {
+			"todo_list": ["mkdir integration tests", "create pages.py"],
+			"enabled": true,
+			"id": "Selenium Testing",
+			"name": "Selenium Testing"
 		},
 		"List Headers": {
 			"todo_list": ["Build ListHeader"],
@@ -629,8 +661,7 @@
 		"Create API endpoint": {
 			"todo_list": [
 				"create viewset and serializer",
-				"register url with router",
-				"add endpoint tests"
+				"register url with router"
 			],
 			"enabled": true,
 			"id": "Create API endpoint",
