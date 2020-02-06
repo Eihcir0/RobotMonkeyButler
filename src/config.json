@@ -865,8 +865,8 @@
 		"Report Permissions": {
 			"todo_list": ["add react report permission type", "makemigrations permissions --empty", "update report permission migration", "run migrations -- report permissions"],
 			"enabled": true,
-			"id": "Permissions",
-			"name": "Permissions"
+			"id": "Report Permissions",
+			"name": "Report Permissions"
 		},
 		"Create API endpoint": {
 			"todo_list": [
