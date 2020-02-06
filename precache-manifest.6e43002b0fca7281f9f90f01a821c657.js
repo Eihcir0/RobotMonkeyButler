@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "426aca65c7aa4ab448a4047f65373c2a",
+    "revision": "ffe600f3de11aab022ae0ad382f26273",
     "url": "/RobotMonkeyButler/index.html"
   },
   {
-    "revision": "9af62bf6ab10bf479d3b",
+    "revision": "9ab3a1d508c06ec67146",
     "url": "/RobotMonkeyButler/static/css/main.c10ba607.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/RobotMonkeyButler/static/js/2.387a39ab.chunk.js.LICENSE"
   },
   {
-    "revision": "9af62bf6ab10bf479d3b",
-    "url": "/RobotMonkeyButler/static/js/main.def43f35.chunk.js"
+    "revision": "9ab3a1d508c06ec67146",
+    "url": "/RobotMonkeyButler/static/js/main.288ed43a.chunk.js"
   },
   {
     "revision": "7b6c1792843308872f43",
