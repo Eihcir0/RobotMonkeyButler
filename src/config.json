@@ -571,8 +571,8 @@
 					"    react_reports_robot_monkey_butler_read_write_permission, created = Permission.objects.get_or_create(\n",
 					"        codename='reports_robot_monkey_butler_read_write',\n",
 					"        name=REACT_PERMISSIONS['reports_robot_monkey_butler_read_write'],\n",
-					"        )\n",
 					"        content_type=ct,\n",
+					"    )\n",
 					"\n",
 					"    # REMOVE FROM DEFAULT ADMIN\n",
 					"    default_admin_auth_group = AuthGroup.objects.filter(\n",
@@ -681,7 +681,7 @@
 			"file_type": "py",
 			"target_file_name": "models",
 			"type": "file",
-			"inserts": { "reportreactpermission":
+			"inserts": { "reactpermission":
 				[
 					"'reports_robot_monkey_butler_read': 'React Reports Robot Monkey Butler Read',\n",
 					"'reports_robot_monkey_butler_read_write': 'React Reports Robot Monkey Butler Read/Write',\n"
