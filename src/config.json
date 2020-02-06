@@ -81,6 +81,17 @@
 			"id": "makemigrations permissions --empty",
 			"rename": null
 		},
+		"makemigrations - reports": {
+			"migration_filename": null,
+			"command": "python manage.py makemigrations reports",
+			"type": "new_migration",
+			"success_message": "Report migration successfully created",
+			"enabled": true,
+			"name": "makemigrations - reports",
+			"path_to_migrations": "lcvista/permissions/migrations/",
+			"id": "makemigrations - reports",
+			"rename": null
+		},
 		"Build ListHeader": {
 			"file_type": "jsx",
 			"target_file_name": "RobotMonkeyButlersListHeader",
@@ -207,14 +218,14 @@
 		},
 		"add report tests": {
 			"file_type": "py",
-			"target_file_name": "test_robot_monkey_butler",
+			"target_file_name": "test_robot_monkey_butler_report",
 			"type": "file",
 			"source_file_path": "lcvista/reports/tests/",
 			"target_file_path": "lcvista/reports/tests/",
 			"name": "add report tests",
 			"enabled": true,
 			"id": "add report tests",
-			"source_file_full_name_with_extension": "test_robot_monkey_butler.py"
+			"source_file_full_name_with_extension": "test_robot_monkey_butler_report.py"
 		},
 		"mkdir reactapp helpers": {
 			"command": "mkdir lcvista/React/app/RobotMonkeyButlers/helpers/",
@@ -771,7 +782,7 @@
 			"name": "Testing"
 		},
 		"Reporting": {
-			"todo_list": ["add columns", "add filters", "add report file", "add new report type to reportconfig", "makemigrations", "run migrations reports", "Report Permissions", "add report tests"],
+			"todo_list": ["add columns", "add filters", "add report file", "add new report type to reportconfig", "makemigrations - reports", "run migrations reports", "Report Permissions", "add report tests"],
 			"enabled": true,
 			"id": "Reporting",
 			"name": "Reporting"
