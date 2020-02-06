@@ -655,6 +655,22 @@
 			"id": "add reactpermission type",
 			"name": "add reactpermission type"
 		},
+		"add react report permission type": {
+			"file_type": "py",
+			"target_file_name": "models",
+			"type": "file",
+			"inserts": { "reportreactpermission":
+				[
+					"'reports_robot_monkey_butler_read': 'React Reports Robot Monkey Butler Read',\n",
+					"'reports_robot_monkey_butler_read_write': 'React Reports Robot Monkey Butler Read/Write',\n"
+				]
+			},
+			"source_file_path": "(^_^)update",
+			"target_file_path": "lcvista/permissions/",
+			"enabled": true,
+			"id": "add react report permission type",
+			"name": "add react report permission type"
+		},
 		"add new report type to reportconfig": {
 			"file_type": "py",
 			"target_file_name": "models",
