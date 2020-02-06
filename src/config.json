@@ -264,8 +264,8 @@
 			"type": "shell_command",
 			"success_message": "Permissions migration successful",
 			"enabled": true,
-			"id": "run migrations -- permissions",
-			"name": "run migrations -- permissions"
+			"id": "run migrations -- report permissions",
+			"name": "run migrations -- report permissions"
 		},
 		"update permission migration": {
 			"file_type": "py",
