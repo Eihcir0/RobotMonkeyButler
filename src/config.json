@@ -205,6 +205,17 @@
 			"id": "add endpoint tests",
 			"source_file_full_name_with_extension": "test_robotmonkeybutlers.py"
 		},
+		"add report tests": {
+			"file_type": "py",
+			"target_file_name": "test_robot_monkey_butler",
+			"type": "file",
+			"source_file_path": "lcvista/reports/tests/",
+			"target_file_path": "lcvista/reports/tests/",
+			"name": "add report tests",
+			"enabled": true,
+			"id": "add report tests",
+			"source_file_full_name_with_extension": "test_robot_monkey_butler.py"
+		},
 		"mkdir reactapp helpers": {
 			"command": "mkdir lcvista/React/app/RobotMonkeyButlers/helpers/",
 			"type": "shell_command",
@@ -760,7 +771,7 @@
 			"name": "Testing"
 		},
 		"Reporting": {
-			"todo_list": ["add columns", "add filters", "add report file", "add new report type to reportconfig", "makemigrations", "run migrations reports", "Report Permissions"],
+			"todo_list": ["add columns", "add filters", "add report file", "add new report type to reportconfig", "makemigrations", "run migrations reports", "Report Permissions", "add report tests"],
 			"enabled": true,
 			"id": "Reporting",
 			"name": "Reporting"
