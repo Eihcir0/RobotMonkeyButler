@@ -5,10 +5,10 @@
 			"target_file_name": "index",
 			"type": "file",
 			"inserts": {
-				"sidebaritem": [
+				"newsidebaritem": [
 					"\t\t\t\t{\n",
 					"\t\t\t\t\tlabel: 'Robot Monkey Butlers',\n",
-					"\t\t\t\t\tpermission: 'react.robot_monkey_butlers',\n",
+					"\t\t\t\t\tpermission: 'react.bulk_uploads',\n",
 					"\t\t\t\t\turl: joinUrl(\n",
 					"\t\t\t\t\t\torganization.slug,\n",
 					"\t\t\t\t\t\t'robotmonkeybutlers',\n",
@@ -22,16 +22,16 @@
 			"id": "Add to Sidebar",
 			"name": "Add to Sidebar"
 		},
-		"Build ListTableRow": {
+		"Build ListRow": {
 			"file_type": "jsx",
-			"target_file_name": "RobotMonkeyButlersListTableRow",
-			"source_file_full_name_with_extension": "RobotMonkeyButlersListTableRow.jsx",
+			"target_file_name": "RobotMonkeyButlersListRow",
+			"source_file_full_name_with_extension": "RobotMonkeyButlersListRow.jsx",
 			"type": "file",
 			"source_file_path": "lcvista/react/app/RobotMonkeyButlers/components/",
 			"target_file_path": "lcvista/react/app/RobotMonkeyButlers/components/",
 			"enabled": true,
-			"id": "Build ListTableRow",
-			"name": "Build ListTableRow"
+			"id": "Build ListRow",
+			"name": "Build ListRow"
 		},
 		"Edit Form Container": {
 			"file_type": "jsx",
@@ -92,17 +92,6 @@
 			"id": "makemigrations - reports",
 			"rename": null
 		},
-		"Build ListHeader": {
-			"file_type": "jsx",
-			"target_file_name": "RobotMonkeyButlersListHeader",
-			"source_file_full_name_with_extension": "RobotMonkeyButlersListHeader.jsx",
-			"type": "file",
-			"source_file_path": "lcvista/react/app/RobotMonkeyButlers/components/",
-			"target_file_path": "lcvista/react/app/RobotMonkeyButlers/components/",
-			"enabled": true,
-			"id": "Build ListHeader",
-			"name": "Build ListHeader"
-		},
 		"Edit Form": {
 			"file_type": "jsx",
 			"target_file_name": "RobotMonkeyButlerForm",
@@ -143,20 +132,18 @@
 		},
 		"Add React routes": {
 			"file_type": "jsx",
-			"target_file_name": "index",
+			"target_file_name": "App",
 			"type": "file",
 			"inserts": {
 				"newroute": [
-					"\t\t\t\t\t<Route path='robotmonkeybutlers'>\n",
-					"\t\t\t\t\t\t<IndexRoute components={{ main: RobotMonkeyButlersListScene, sidebar: SideNavBar }} />\n",
-					"\t\t\t\t\t\t<Route onEnter={scrollToTop} path=\"add\" components={{ main: RobotMonkeyButlerEditScene, sidebar: SideNavBar }} />\n\t\t\t\t\t\t<Route onEnter={scrollToTop} path=\":robotMonkeyButlerId\" components={{ main: RobotMonkeyButlerEditScene, sidebar: SideNavBar }} />\n\t\t\t\t\t</Route>\n"
+					"\t\t\t\t\t\t\t\t\t\t\t\t\t<Route component={RobotMonkeyButlersListScene} exact path=\"/:organizationSlug/robotmonkeybutlers\"/>\n"
 				],
 				"newimport": [
-					"import RobotMonkeyButlersListScene from '~/RobotMonkeyButlers/containers/RobotMonkeyButlersListScene'\nimport RobotMonkeyButlerEditScene from '~/RobotMonkeyButlers/containers/RobotMonkeyButlerEditScene'\n"
+					"import { RobotMonkeyButlersListScene } from '~/RobotMonkeyButlers/containers/RobotMonkeyButlersListScene'\n"
 				]
 			},
 			"source_file_path": "(^_^)update",
-			"target_file_path": "lcvista/react/app/",
+			"target_file_path": "lcvista/react/app/App/containers/",
 			"enabled": true,
 			"id": "Add React routes",
 			"name": "Add React routes"
@@ -777,13 +764,13 @@
 		"Testing": {
 			"todo_list": ["Selenium Testing", "add endpoint tests"
 			],
-			"enabled": true,
+			"enabled": false,
 			"id": "Testing",
 			"name": "Testing"
 		},
 		"Reporting": {
 			"todo_list": ["add columns", "add filters", "add report file", "add new report type to reportconfig", "makemigrations - reports", "run migrations reports", "Report Permissions", "add report tests"],
-			"enabled": true,
+			"enabled": false,
 			"id": "Reporting",
 			"name": "Reporting"
 		},
@@ -793,12 +780,6 @@
 			"id": "Selenium Testing",
 			"name": "Selenium Testing"
 		},
-		"List Headers": {
-			"todo_list": ["Build ListHeader"],
-			"enabled": true,
-			"id": "List Headers",
-			"name": "List Headers"
-		},
 		"Back End": {
 			"todo_list": [
 				"Manage startapp",
@@ -807,7 +788,7 @@
 				"run migrations -- new table",
 				"Create API endpoint"
 			],
-			"enabled": true,
+			"enabled": false,
 			"id": "Back End",
 			"name": "Back End"
 		},
@@ -818,7 +799,7 @@
 			"name": "ListFilters"
 		},
 		"List Table": {
-			"todo_list": ["Build ListTableRow", "Build ListContainer"],
+			"todo_list": ["Build ListRow", "Build ListContainer"],
 			"enabled": true,
 			"id": "List Table",
 			"name": "List Table"
@@ -858,7 +839,6 @@
 			"todo_list": [
 				"Build List Scene",
 				"List Table",
-				"List Headers",
 				"ListFilters",
 				"Add React routes",
 				"Add to Sidebar"
@@ -869,7 +849,7 @@
 		},
 		"Permissions": {
 			"todo_list": ["add reactpermission type", "makemigrations permissions --empty", "update permission migration", "run migrations -- permissions"],
-			"enabled": true,
+			"enabled": false,
 			"id": "Permissions",
 			"name": "Permissions"
 		},
